@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="app.component.css" type="text/css" />
+<body class="main">
+<h1>Student</h1>
+<button class="button" (click)="buttonclicked(1)"> List </button> | <button class="button1" (click)="buttonclicked(2)"> Details</button>
+
+<app-student-list *ngIf="pageNo == 1"></app-student-list>
+<app-student-details *ngIf="pageNo == 2"></app-student-details>
+<style>
+    
+</style>
+
+</body>
